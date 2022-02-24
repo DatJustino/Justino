@@ -2,6 +2,7 @@ package com.justino2;
 import java.util.Scanner;
 public class testing {
   Scanner in = new Scanner(System.in);
+
   int askUserhowManyFoods() {
     int numOfFoods;
       System.out.println("how many foods?");

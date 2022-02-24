@@ -5,37 +5,20 @@ import java.util.Scanner;
 public class FridgeFunny {
   Scanner in = new Scanner(System.in);
 
-  void amountOfFood() {
-    System.out.println("Enter amount of food to buy: ");
-    int numOfFood = in.nextInt();
-    for (int i = 0; i < numOfFood; i++) {
-      int[] foodTally = new int[10];
-    }
-
-  /*String[] inputFood(int num) {
-    String[] foodItemsArray = new String[num];
-    System.out.println("Enter which food to buy: ");
-    String foodItems = in.nextLine();
-    for (int i = 0; i < num; i++)
-      System.out.println("item: #" + (i + 1));
-    return foodItemsArray;
-  }
-*/
-    //void go () {
-
-     // new FridgeFunny().amountOfFood();
-      //  new FridgeFunny().inputFood(numOfFood);
-    }
-  //}
-
   public static void main(String[] args) {
-    Scanner in = new Scanner(System.in);
-    //new FridgeFunny().go();
-    System.out.println("Enter amount of food to buy: ");
-    int numOfFood = in.nextInt();
-    for (int i = 0; i < numOfFood; i++) {
-      int[] foodTally = new int[i];
-      System.out.println(foodTally[i]);
-    }
-  }
+     new FridgeFunny().howManyToBuy();
 }
+  void howManyToBuy() {
+    int count = 0;
+    System.out.println("Calculate and enter amount of items to buy, so you bring enough bags: ");
+    String[] foodToBuy = new String[in.nextInt()];
+    in.nextLine();
+    System.out.println("Enter items to buy: ");
+    for (int i = 0; i < foodToBuy.length; i++) {
+        String food = in.nextLine();
+        foodToBuy[i] = food;
+      System.out.println("Continue entering items: ");
+      }
+      for (String j: foodToBuy) {
+        System.out.printf("Item: #%d %s.\n", ++count, j);
+      }}}
